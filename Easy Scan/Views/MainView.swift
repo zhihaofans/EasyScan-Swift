@@ -54,7 +54,7 @@ struct iosMainView: View {
         default:
             NavigationView {
                 List {
-                    NavigationLink("生成二维码", destination: Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/))
+                    NavigationLink("扫描二维码", destination: ScanView())
                     Button(action: {
                         cameraUtil.checkCameraPermissions {
                             print("checkCameraPermissions success")
